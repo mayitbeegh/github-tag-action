@@ -13,6 +13,7 @@ initial_version=${INITIAL_VERSION:-0.0.0}
 tag_context=${TAG_CONTEXT:-repo}
 suffix=${PRERELEASE_SUFFIX:-beta}
 verbose=${VERBOSE:-true}
+git config --global --add safe.directory /github/workspace
 
 cd ${GITHUB_WORKSPACE}/${source}
 
